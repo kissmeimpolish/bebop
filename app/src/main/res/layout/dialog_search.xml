@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/find_music"
+            android:id="@+id/tvTitle"
+            android:layout_margin="15dp"
+            android:textColor="#9e9e9e"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"/>
+
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etKeyword"
+            android:layout_toLeftOf="@+id/ibSearch"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:textColor="#9e9e9e"
+            android:textColorHint="#bdbdbd"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#9e9e9e"
+            android:hint="@string/keyword"
+            android:maxLength="100" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/ibSearch"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ns_search2"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvSearch" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/submit"
+        android:id="@+id/bSubmit"
+        android:background="@android:color/transparent"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#9e9e9e"
+        android:visibility="gone" />
+
+</LinearLayout>

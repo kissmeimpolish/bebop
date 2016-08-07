@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_group"
+            android:id="@+id/tvTitle"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="#9e9e9e" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public"
+            android:id="@+id/rbPublic"
+            android:textColor="#9e9e9e"
+            android:textSize="18sp"
+            android:checked="true"
+            android:layout_marginRight="15dp"
+            android:buttonTint="#2196F3" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private"
+            android:id="@+id/rbPrivate"
+            android:textColor="#9e9e9e"
+            android:textSize="18sp"
+            android:buttonTint="#2196F3" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGroupName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#9e9e9e"
+        android:ems="10"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:textColor="#9e9e9e"
+        android:textColorHint="#bdbdbd"
+        android:textSize="18sp"
+        android:hint="@string/group_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#9e9e9e"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:textColor="#9e9e9e"
+        android:textColorHint="#bdbdbd"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:hint="@string/password" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:id="@+id/bCancel"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:textColor="#9e9e9e"
+            android:textSize="18sp"
+            android:textAllCaps="true"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/create"
+            android:id="@+id/bCreate"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:textColor="#9e9e9e"
+            android:textSize="18sp"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+</LinearLayout>
