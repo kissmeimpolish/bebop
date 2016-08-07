@@ -18,7 +18,7 @@ public class Data {
     int nLogins;
     Group group;
     ArrayList<Group> myGroups = new ArrayList<>();
-    Jedis jedis = new Jedis("130.211.146.160", 6379, 1000);
+    Jedis jedis = new Jedis("104.196.5.79", 6380, 1000);
     Gson gson = new Gson();
     HashMap<String, Integer> queue = new HashMap<>();
     boolean wasShown;
@@ -31,7 +31,7 @@ public class Data {
 
     public void initUserInfo(String userId) {
         wasShown = false;
-        jedis.auth("0c896a563d48ec728f74d9c31ee732442817af2c");
+        jedis.auth("11e79c78f0021e125c58a8505c1fbd1dd6a3c8b913cb062836abc8bb4340546b");
         this.userId = userId.replace(':', '-');
         myGroups.clear();
 
